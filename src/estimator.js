@@ -1,6 +1,6 @@
 const covid19ImpactEstimator = (data) => {
   const income = data.region.avgDailyIncomeInUSD;
-  const population = data.region.avgDailyIncomePopulatin;
+  const population = data.region.avgDailyIncomePopulation;
   const hospitalBeds = data.totalHospitalsBeds * 0.35;
   if (data.periodType === 'weeks') {
     data.timeToElapse *= 7;
@@ -21,19 +21,19 @@ const covid19ImpactEstimator = (data) => {
       return Math.ceil(hospitalBeds - this.severCasesByRequestedTime);
     },
     get casesForICUByRequestedTime() {
-      return this.infectionsByRequestedTime * 0.05;
+      return Math.trunc(this.infectionsByRequestedTime * 0.05);
     },
     get casesForVentilatorsByRequestedTime() {
-      return this.infectionsByRequestedTime * 0.05;
+      return Math.trunc(this.infectionsByRequestedTime * 0.02);
     },
     get dollarsInFlight() {
-      return this.infectionsByRequestedTime * 0.05;
+      return this.infectionsByRequestedTime * population * ?;
     }
   };
   return {
     data,
     impact,
-    severImpact
+    severeImpact
   };
 };
 
