@@ -14,11 +14,11 @@ const covid19ImpactEstimator = (data) => {
     get infectionsByRequestedTime() {
       return this.currentlyInfected * (2 ** factor);
     },
-    get severCasesByRequestedTime() {
+    get severeCasesByRequestedTime() {
       return this.infectionsByRequestedTime * 0.15;
     },
     get hospitalBedsByRequestedTime() {
-      return Math.trunc(hospitalBeds - this.severCasesByRequestedTime);
+      return Math.trunc(hospitalBeds - this.severeCasesByRequestedTime);
     },
     get casesForICUByRequestedTime() {
       return this.infectionsByRequestedTime * 0.05;
@@ -35,11 +35,11 @@ const covid19ImpactEstimator = (data) => {
     get infectionsByRequestedTime() {
       return this.currentlyInfected * (2 ** factor);
     },
-    get severCasesByRequestedTime() {
+    get severeCasesByRequestedTime() {
       return this.infectionsByRequestedTime * 0.15;
     },
     get hospitalBedsByRequestedTime() {
-      return Math.trunc(hospitalBeds - this.severCasesByRequestedTime);
+      return Math.trunc(hospitalBeds - this.severeCasesByRequestedTime);
     },
     get casesForICUByRequestedTime() {
       return this.infectionsByRequestedTime * 0.05;
