@@ -1,7 +1,7 @@
 const covid19ImpactEstimator = (data) => {
   const income = data.region.avgDailyIncomeInUSD;
   const population = data.region.avgDailyIncomePopulation;
-  const hospitalBeds = data.totalHospitalsBeds * 0.35;
+  const hospitalBeds = data.totalHospitalBeds * 0.35;
   if (data.periodType === 'weeks') {
     data.timeToElapse *= 7;
   } else if (data.periodType === 'months') {
