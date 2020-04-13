@@ -71,6 +71,7 @@ typings/
 # dotenv environment variables file
 .env
 .env.test
+FRONTEND=http://https://goofy-yalow-6d320d.netlify.com/
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
