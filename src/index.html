@@ -5,37 +5,39 @@
     <meta name="Description" content="COVID Tracker App made by O. C. Iyadi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href=" https://fonts.gstatic.com/" >
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <title>COVID Tracker</title>
 </head>
 <body>
     <div class="container">  
         <form id="data-form" action="" method="post">
           <h3>#BuildforSDG</h3>
-          <h4>An Attempt to helping society and leaders prepare for the real rig problem. &#129303</h4>
+          <h4>An Attempt to helping society and leaders prepare for the real rig problem.</h4>
           <fieldset>
-            
-            <input placeholder="Number of Population" name="data-population" type="text" tabindex="1" required autofocus>
+            <label for="population">Population</label>
+            <input placeholder="Number of Population" name="data-population" type="text" tabindex="0" required autofocus>
           </fieldset>
           <fieldset>
-            
-            <input placeholder="Time To Elapse" name="data-time-to-elapse" type="text" tabindex="2" required>
+            <label for="time-elapse">Time</label>
+            <input placeholder="Time To Elapse" name="data-time-to-elapse" type="text" tabindex="0" required>
           </fieldset>
           <fieldset>
-            
-            <input placeholder="Number of Reported Cases" name="data-reported-cases" type="tel" tabindex="3" required>
+            <label for="reported-cases">Reported Cases</label>
+            <input placeholder="Number of Reported Cases" name="data-reported-cases" type="tel" tabindex="0" required>
           </fieldset>
           <fieldset>
-            
-            <input placeholder="Total Number of Hospital Beds" name="data-total-hospital-beds" type="text" tabindex="2" required>
+            <label for="total-hospital-beds">Number of Hospital Beds</label>
+            <input placeholder="Total Number of Hospital Beds" name="data-total-hospital-beds" type="text" tabindex="0" required>
           </fieldset>
           <fieldset>
-            
+            <label for="date">Period</label>
             <input type="date" id="start" name="data-period-type"
             value="2018-07-22"
             min="2019-01-01" max="2023-12-31">
           </fieldset>
           <fieldset>
-            <button name="submit" type="submit" name="data-go-estimate" data-submit="...Sending">Submit</button>
+            <button role="button" type="submit" name="data-go-estimate" data-submit="...Sending">Submit</button>
           </fieldset>
         </form>
       </div>

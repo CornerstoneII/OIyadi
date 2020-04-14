@@ -18,8 +18,9 @@ body {
 	font-weight:300;
 	font-size: 12px;
 	line-height:30px;
-	color:#777;
-	background:#ffbe76;
+	color:rgb(37, 37, 37);
+	background:#0CF;
+	font-display: swap;
 }
 
 .container {
@@ -38,7 +39,7 @@ body {
 }
 
 #data-form h3 {
-	color: #F96;
+	color: black;
 	display: block;
 	font-size: 30px;
 	font-weight: 400;
@@ -83,11 +84,11 @@ fieldset {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#ffbe76;
+	background:#0CF;
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
-	font-size:15px;
+	font-size:18px;
 }
 
 #data-form button[type="submit"]:hover {
