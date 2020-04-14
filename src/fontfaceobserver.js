@@ -1,3 +1,20 @@
+/* eslint-disable no-redeclare */
+/* eslint-disable no-empty */
+/* eslint-disable no-return-assign */
+/* eslint-disable no-nested-ternary */
+/* eslint-disable no-sequences */
+/* eslint-disable no-shadow */
+/* eslint-disable new-cap */
+/* eslint-disable func-names */
+/* eslint-disable max-len */
+/* eslint-disable no-void */
+/* eslint-disable no-mixed-operators */
+/* eslint-disable eqeqeq */
+/* eslint-disable vars-on-top */
+/* eslint-disable no-var */
+/* eslint-disable no-cond-assign */
+/* eslint-disable no-use-before-define */
+/* eslint-disable no-unused-expressions */
 /* Font Face Observer v2.0.13 - © Bram Stein. License: BSD-3-Clause */(function () {
   let f; const g = []; function l(a) { g.push(a); g.length == 1 && f(); } function m() { for (;g.length;)g[0](), g.shift(); }f = function () { setTimeout(m); }; function n(a) { this.a = p; this.b = void 0; this.f = []; const b = this; try { a((a) => { q(b, a); }, (a) => { r(b, a); }); } catch (c) { r(b, c); } } var p = 2; function t(a) { return new n(((b, c) => { c(a); })); } function u(a) { return new n(((b) => { b(a); })); } function q(a, b) { if (a.a == p) { if (b == a) throw new TypeError(); let c = !1; try { const d = b && b.then; if (b != null && typeof b === 'object' && typeof d === 'function') { d.call(b, (b) => { c || q(a, b); c = !0; }, (b) => { c || r(a, b); c = !0; }); return; } } catch (e) { c || r(a, e); return; }a.a = 0; a.b = b; v(a); } }
   function r(a, b) { if (a.a == p) { if (b == a) throw new TypeError(); a.a = 1; a.b = b; v(a); } } function v(a) { l(() => { if (a.a != p) for (;a.f.length;) { var b = a.f.shift(); const c = b[0]; const d = b[1]; const e = b[2]; var b = b[3]; try { a.a == 0 ? typeof c === 'function' ? e(c.call(void 0, a.b)) : e(a.b) : a.a == 1 && (typeof d === 'function' ? e(d.call(void 0, a.b)) : b(a.b)); } catch (h) { b(h); } } }); }n.prototype.g = function (a) { return this.c(void 0, a); }; n.prototype.c = function (a, b) { const c = this; return new n(((d, e) => { c.f.push([a, b, d, e]); v(c); })); };
