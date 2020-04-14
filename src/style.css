@@ -51,7 +51,7 @@ body {
 	font-size:13px;
 }
 
-fieldset {
+label {
 	border: medium none !important;
 	margin: 0 0 10px;
 	min-width: 100%;

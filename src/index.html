@@ -14,28 +14,23 @@
         <form id="data-form" action="" method="post">
           <h3>#BuildforSDG</h3>
           <h4>An Attempt to helping society and leaders prepare for the real rig problem.</h4>
-          <fieldset>
-            <label for="population">Population</label>
-            <input placeholder="Number of Population" name="data-population" type="text" tabindex="0" required autofocus>
-          </fieldset>
-          <fieldset>
-            <label for="time-elapse">Time</label>
-            <input placeholder="Time To Elapse" name="data-time-to-elapse" type="text" tabindex="0" required>
-          </fieldset>
-          <fieldset>
-            <label for="reported-cases">Reported Cases</label>
-            <input placeholder="Number of Reported Cases" name="data-reported-cases" type="tel" tabindex="0" required>
-          </fieldset>
-          <fieldset>
-            <label for="total-hospital-beds">Number of Hospital Beds</label>
+          <label for="population">Population
+            <input placeholder="Number of Population" id="population" name="data-population" type="text" tabindex="0" required autofocus>
+          </label>
+          <label for="time-elapse">Time
+            <input placeholder="Time To Elapse" id="time-elapse" name="data-time-to-elapse" type="text" tabindex="0" required>
+          </label>
+          <label for="reported-cases">Reported Cases
+            <input placeholder="Number of Reported Cases" id="reported-cases" name="data-reported-cases" type="tel" tabindex="0" required>
+          </label for="total-hospital-beds">Number of Hospital Beds
+          <label>
             <input placeholder="Total Number of Hospital Beds" name="data-total-hospital-beds" type="text" tabindex="0" required>
-          </fieldset>
-          <fieldset>
-            <label for="date">Period</label>
+          </label>
+          <label for="date">Period
             <input type="date" id="start" name="data-period-type"
             value="2018-07-22"
             min="2019-01-01" max="2023-12-31">
-          </fieldset>
+          </label>
           <fieldset>
             <button role="button" type="submit" name="data-go-estimate" data-submit="...Sending">Submit</button>
           </fieldset>
