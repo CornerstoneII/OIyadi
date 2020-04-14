@@ -20,7 +20,6 @@ body {
 	line-height:30px;
 	color:rgb(37, 37, 37);
 	background:#0CF;
-	font-display: swap;
 }
 
 .container {
@@ -85,7 +84,7 @@ label {
 	width:100%;
 	border:none;
 	background:#0CF;
-	color:#FFF;
+	color:#212121;
 	margin:0 0 5px;
 	padding:10px;
 	font-size:18px;

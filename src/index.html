@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href=" https://fonts.gstatic.com/" >
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    
     <title>COVID Tracker</title>
 </head>
 <body>
@@ -17,24 +17,33 @@
           <label for="population">Population
             <input placeholder="Number of Population" id="population" name="data-population" type="text" tabindex="0" required autofocus>
           </label>
+
           <label for="time-elapse">Time
             <input placeholder="Time To Elapse" id="time-elapse" name="data-time-to-elapse" type="text" tabindex="0" required>
           </label>
+
           <label for="reported-cases">Reported Cases
             <input placeholder="Number of Reported Cases" id="reported-cases" name="data-reported-cases" type="tel" tabindex="0" required>
-          </label for="total-hospital-beds">Number of Hospital Beds
-          <label>
-            <input placeholder="Total Number of Hospital Beds" name="data-total-hospital-beds" type="text" tabindex="0" required>
           </label>
-          <label for="date">Period
-            <input type="date" id="start" name="data-period-type"
+
+          <label for="total-hospital-beds">Number of Hospital Beds
+            <input placeholder="Total Number of Hospital Beds" id="total-hospital-beds" name="data-total-hospital-beds" type="text" tabindex="0" required>
+          </label>
+
+          <label for="period-date">Period
+            <input type="period-date" id="start" name="data-period-type"
             value="2018-07-22"
             min="2019-01-01" max="2023-12-31">
           </label>
-          <fieldset>
+
+          <label>
             <button role="button" type="submit" name="data-go-estimate" data-submit="...Sending">Submit</button>
-          </fieldset>
+          </label>
         </form>
       </div>
+      <script src="fontfaceobserver.js" type="text/javascript"></script>
+      <script src="thread-work.js"></script>
+      <script src="font-display.js"></script>
+      <script src="boot-time.js"></script>
 </body>
 </html>
